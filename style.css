@@ -1,0 +1,57 @@
+body {
+    background-color: beige;
+    color:aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#gamefield {
+    border: 1px solid blue;
+    width: fit-content
+}
+
+#background {
+    width: calc(var(--TILE_SIZE) * 1px);
+    display: grid;
+    aspect-ratio: 1/1;
+    grid-template-columns: repeat(var(--GRID_WIDTH), max-content);
+    background-image: url("./images/tiles/flowers.png");
+}
+
+.tile {
+    width: calc(var(--TILE_SIZE) * 1px);
+    aspect-ratio: 1/1;
+    background-image: url("./images/tiles/grass.png");
+}
+
+.path {
+    background-image: url("./images/tiles/path.png");
+}
+
+.wall {
+    background-image: url("./images/tiles/wall.png");
+}
+
+.flowers {
+    background-image: url("./images/tiles/flowers.png");
+}
+
+.abyss {
+    background-image: url("./images/tiles/abyss.png");
+}
+
+.lava {
+    background-image: url("./images/tiles/lava.png");
+}
+
+.water {
+    background-image: url("./images/tiles/water.png");
+}
+
+.well {
+    background-image: url("./images/tiles/well.png");
+}
+
+.redwall {
+    background-image: url("./images/tiles/redwall.png");
+}
+
