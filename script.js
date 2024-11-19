@@ -28,7 +28,7 @@ const TILE_SIZE = 32;
 
 function getTileAtCoord({row, col}) {
 
-return row, col
+return [row, col];
 }
 
 function getTileAtPos(position) {
@@ -51,7 +51,6 @@ function createTiles() {
         }
     }
     
-
     background.style.setProperty("--GRID_WIDTH", GRID_WIDTH);
     background.style.setProperty("--GRID_HEIGHT", GRID_HEIGHT);
     background.style.setProperty("--TILE_SIZE", TILE_SIZE);
